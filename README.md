@@ -2,7 +2,7 @@
 
 Use at your own risk, this is a botched-together project for personal needs.
 
-Only tested on `macOS Catalina`
+Only tested on `macOS Catalina` for local dev and debian as server (doesn't work with install script -yet-)
 
 Requries `rust` https://rustup.rs/ 
 
