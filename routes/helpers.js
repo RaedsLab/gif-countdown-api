@@ -78,11 +78,9 @@ const getGif = (endDate, uuid) => {
     .forEach((frame, index) => generateImage(uuid, frame, index.pad()));
 
   // Generate gif from frames
-  execSync(
-    `engiffen ./generated/${uuid}/*.png -f 1 -q naive -o ./output/large-${uuid}.gif`
+  return execSync(
+    `gifski --nosort --quality 100 --width 300 --height 80  --fps 1 -o - ./generated/${uuid}/*.png`
   );
-
-  return execSync(`gifsicle -i ./output/large-${uuid}.gif -O1 --colors 124`);
 };
 
 const cleanUp = (uuid) => {

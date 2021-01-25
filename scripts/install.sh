@@ -1,2 +1,1 @@
-brew install gifsicle
-cargo install engiffen --features debug-stderr
+cargo install --git https://github.com/ImageOptim/gifski --tag 1.2.7
